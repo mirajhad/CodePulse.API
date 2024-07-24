@@ -45,9 +45,13 @@ namespace CodePulse.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllCategories([FromQuery] string? query,
             [FromQuery] string? sortBy,
-            [FromQuery] string? sortDirection)
+            [FromQuery] string? sortDirection,
+            [FromQuery] int? pageNumber,
+            [FromQuery] int? pageSize
+            )
         {
-            var categories = await _categoryRepository.GetAllAsync(query, sortBy, sortDirection);
+            var categories = await _categoryRepository
+                .GetAllAsync(query, sortBy, sortDirection, pageNumber, pageSize);
             var response = new List<CategoryDto>();
             foreach (var category in categories)
             {
