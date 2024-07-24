@@ -87,6 +87,11 @@ namespace CodePulse.API.Repositories.Implementation
 
         }
 
+        public async Task<int> GetCount()
+        {
+            return await _dbContext.Categories.CountAsync();
+        }
+
         public async Task<Category?> UpdateAsync(Category category)
         {
             var existingCategory = await _dbContext.Categories.FirstOrDefaultAsync(x => x.Id == category.Id);
