@@ -5,6 +5,10 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePulse.API", "CodePulse.API\CodePulse.API.csproj", "{00D8FDC4-A09E-4687-8D5A-261AD01F0E09}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc.Common", "Doc.Common", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePulse.Documents", "CodePulse.Documents\CodePulse.Documents.csproj", "{0FBE2FAB-32AE-4231-8F10-9858D636151F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{00D8FDC4-A09E-4687-8D5A-261AD01F0E09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00D8FDC4-A09E-4687-8D5A-261AD01F0E09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00D8FDC4-A09E-4687-8D5A-261AD01F0E09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FBE2FAB-32AE-4231-8F10-9858D636151F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FBE2FAB-32AE-4231-8F10-9858D636151F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FBE2FAB-32AE-4231-8F10-9858D636151F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FBE2FAB-32AE-4231-8F10-9858D636151F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0FBE2FAB-32AE-4231-8F10-9858D636151F} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A721E0DF-3CA4-4443-B7AA-AD0F3F589B43}
